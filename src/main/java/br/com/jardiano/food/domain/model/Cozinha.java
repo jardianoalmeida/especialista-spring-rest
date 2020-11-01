@@ -3,13 +3,13 @@ package br.com.jardiano.food.domain.model;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "tab_cozinhas")
+@Table
 public class Cozinha {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY) // AutoIncremento
     private Long id;
 
-    @Column(name = "nom_cozinha")
+    //@Column(name = "nome_cozinha")
     private String nome;
 
     public Long getId() {
